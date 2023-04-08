@@ -4,6 +4,15 @@
     box-sizing: border-box;
 }
 
+/*.RomanImage {
+    width: 400px;
+    height: 400px;
+    scale: 15%;
+    margin-left: 100px;
+    margin-top: 100px;
+   
+  } -*/
+
 .clock {
     position: absolute;
     width: 400px;
@@ -94,15 +103,15 @@
   }
   
   .hour-hand {
-    animation: rotate-hour-hand 20s infinite linear;
+    animation: rotate-hour-hand 8s infinite linear;
   }
   
   .minute-hand {
-    animation: rotate-minute-hand 60s infinite linear;
+    animation: rotate-minute-hand 6s infinite linear;
   }
   
   .second-hand {
-    animation: rotate-second-hand 10s infinite linear;
+    animation: rotate-second-hand 1s infinite linear;
   }
   
   .text{
@@ -111,3 +120,4 @@
     font-family: 'Oswald', sans-serif;
     padding: 20px;
   }
+
