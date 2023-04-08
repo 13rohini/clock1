@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clock {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background-color: rgb(196, 196, 196);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto auto;
+    box-shadow: 0px 0px 10px rgba(red, green, blue, alpha);
+  }
+  
+  .hour-hand {
+    position: absolute;
+    top: 24.5%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    width: 7px;
+    height: 100px;
+    background-color: #333;
+    border-radius: 10px;
+    transform-origin: bottom center;
+  }
+  
+  .minute-hand {
+    position: absolute;
+    top: 18%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    width: 6px;
+    height: 130px;
+    background-color: #333;
+    border-radius: 10px;
+    transform-origin: bottom center;
+  }
+  
+  .second-hand {
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    width: 3.5px;
+    height: 150px;
+    background-color: red;
+    border-radius: 10px;
+    transform-origin: bottom center;
+  }
+  
+  .center-circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+  }
+  
+  /* Animation */
+  @keyframes rotate-hour-hand {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes rotate-minute-hand {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes rotate-second-hand {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .hour-hand {
+    animation: rotate-hour-hand 20s infinite linear;
+  }
+  
+  .minute-hand {
+    animation: rotate-minute-hand 60s infinite linear;
+  }
+  
+  .second-hand {
+    animation: rotate-second-hand 10s infinite linear;
+  }
+  
+  .text{
+    margin-top: 750px;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    padding: 20px;
+  }
